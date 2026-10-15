@@ -1,0 +1,8 @@
+# Пример настроек SSH-клиента в Windows: C:/Users/Andrey/.ssh/config
+# IdentityFile указывает на ПРИВАТНЫЙ ключ, который остаётся только на Windows.
+Host ubuntu-devops
+    HostName 127.0.0.1
+    User runner
+    Port 2222
+    IdentityFile C:/Users/Andrey/.ssh/id_ed25519
+    IdentitiesOnly yes
